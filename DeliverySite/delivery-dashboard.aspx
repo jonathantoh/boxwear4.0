@@ -63,7 +63,7 @@
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard
               </a>
                 <a href="ProductViewDlist.aspx" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> View Products <span class="badge">12</span></a>
-              <a href="ProductInsert.aspx" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Add Product <span class="badge">12</span></a>
+              <a href="delivery-add-new-customer.aspx" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Add Customer <span class="badge">12</span></a>
               <a href="admin-view-orders.aspx" class="list-group-item"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Orders <span class="badge">33</span></a>
               <a href="admin-view-users.aspx" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">203</span></a>
                 <a href="admin-feedback.aspx" class="list-group-item"><span class="	glyphicon glyphicon-comment" aria-hidden="true"></span> Feedback <span class="badge">203</span></a>
