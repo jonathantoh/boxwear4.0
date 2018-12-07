@@ -91,7 +91,7 @@
     <br />
 
           <div class="container" style="margin-top:60px">
-         <div class="row">
+        <%-- <div class="row">
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="/images/home_mens.jpg" target="_blank">
@@ -117,14 +117,14 @@
       </div>
     </div>
   </div>
-              
+              --%>
 
               <div class="row">
         <div class="col-sm-4 my-4">
           <div class="card">
-            <img class="card-img-top" src="images/jordans.jpg" style="width:auto;height:300px" alt=""/>
+            <img class="card-img-top" src="delivery-images/delivery.png" style="width:auto;height:300px" alt=""/>
             <div class="card-body">
-              <h4 class="card-title"><strong>Jordans Box</strong></h4>
+              <h4 class="card-title"><strong>Fastest delivery in Singapore</strong></h4>
               <p class="card-text">$299.00</p>
             </div>
             <div class="card-footer">
@@ -134,9 +134,9 @@
         </div>
         <div class="col-sm-4 my-4">
           <div class="card">
-            <img class="card-img-top" src="images/pants.jpg" style="width:auto;height:300px" alt="">
+            <img class="card-img-top" src="delivery-images/delivery_01.png" style="width:auto;height:300px" alt="">
             <div class="card-body">
-              <h4 class="card-title"><strong>Pants Box</strong></h4>
+              <h4 class="card-title"><strong>Reliable service</strong></h4>
               <p class="card-text">$79.00</p>
             </div>
             <div class="card-footer">
@@ -146,9 +146,9 @@
         </div>
         <div class="col-sm-4 my-4">
           <div class="card">
-            <img class="card-img-top" src="images/supreme.jpg" style="width:auto;height:300px" alt="">
+            <img class="card-img-top" src="delivery-images/logo.png" style="width:auto;height:300px" alt="">
             <div class="card-body">
-              <h4 class="card-title"><strong>Tee shirt Box</strong></h4>
+              <h4 class="card-title"><strong>24/7 Customer service</strong></h4>
               <p class="card-text">$49.00</p>
             </div>
             <div class="card-footer">
