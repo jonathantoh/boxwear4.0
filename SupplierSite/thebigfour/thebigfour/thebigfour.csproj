@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,6 +77,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -94,10 +98,37 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\demo.css" />
+    <Content Include="assets\css\Footer-white.css" />
+    <Content Include="assets\css\Footer-with-button-logo.css" />
+    <Content Include="assets\css\Footer-with-logo.css" />
+    <Content Include="assets\css\Footer-with-social-icons.css" />
+    <Content Include="assets\demo.js" />
+    <Content Include="default.aspx" />
+    <Content Include="delivery-images\boxwear-resize.png" />
+    <Content Include="delivery-images\delivery-bg.png" />
+    <Content Include="delivery-images\delivery.png" />
+    <Content Include="delivery-images\delivery_01.png" />
+    <Content Include="delivery-images\logo.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="pendingpurchaseorders.aspx" />
+    <Content Include="prodlist.aspx" />
+    <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Service References\SvcRefBoxWear\configuration91.svcinfo" />
+    <None Include="Service References\SvcRefBoxWear\configuration.svcinfo" />
+    <None Include="Service References\SvcRefBoxWear\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="supplier-images\cap.jpg" />
+    <Content Include="supplier-images\pants1.jpg" />
+    <Content Include="supplier-images\supreme1.jpg" />
+    <Content Include="supplier-MasterPage.Master" />
+    <Content Include="WsTheBigFour.svc" />
+    <None Include="Service References\SvcRefBoxWear\WsBoxWear.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,12 +137,68 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\thebigfour.mdf" />
+    <Content Include="App_Data\thebigfour_log.ldf">
+      <DependentUpon>thebigfour.mdf</DependentUpon>
+    </Content>
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BllProducts.cs" />
+    <Compile Include="BLL\BllPurchaseOrder.cs" />
+    <Compile Include="BLL\BllPurchaseOrders.cs" />
+    <Compile Include="DAL\DalDbConn.cs" />
+    <Compile Include="DAL\DalProducts.cs" />
+    <Compile Include="DAL\DalPurchaseOrders.cs" />
+    <Compile Include="DAL\DalViewPurchaseOrder.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IWsTheBigFour.cs" />
+    <Compile Include="pendingpurchaseorders.aspx.cs">
+      <DependentUpon>pendingpurchaseorders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pendingpurchaseorders.aspx.designer.cs">
+      <DependentUpon>pendingpurchaseorders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="prodlist.aspx.cs">
+      <DependentUpon>prodlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prodlist.aspx.designer.cs">
+      <DependentUpon>prodlist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SvcRefBoxWear\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="supplier-MasterPage.Master.cs">
+      <DependentUpon>supplier-MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="supplier-MasterPage.Master.designer.cs">
+      <DependentUpon>supplier-MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WsTheBigFour.svc.cs">
+      <DependentUpon>WsTheBigFour.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SvcRefBoxWear\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
