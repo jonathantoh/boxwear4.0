@@ -27,12 +27,16 @@ namespace thebigfour.DAL
             return programSupplierClient.GetOrderDetails(PONum);
         }
 
-        //public DataSet GetProductUsingID(int[] IDs)
-        //{
-        //    WsBoxWearClient programSupplierClient;
-        //    programSupplierClient = new WsBoxWearClient();
-        //    return programSupplierClient.GetProductUsingID(IDs);
-        //}
+       public DataSet updatePOStatus(int PoID)
+        {
+            WsBoxWearClient programSupplierClient;
+            programSupplierClient = new WsBoxWearClient();
+            return programSupplierClient.updatePOStatus(PoID);
+        }
+
+    
+
+
 
 
 

@@ -127,25 +127,67 @@
 
 
              <br />
-               <div class="row">
+          
+
+             <div class="row">
                      <div class="col-md-4" style="padding-left:130px;">
+                         <div class="card ">
+                               <div class="card-header ">
+                            <h3 class="card-title"><strong class="newStyle4">Purchase Order ID + Status</strong></h3>
+                            <p class="card-category">Last Generated Date and Amount</p>
+                        </div>
+
+                             <asp:Chart ID="Chart3" runat="server" DataSourceID="SqlDataSource2" Palette="None" PaletteCustomColors="72, 249, 184; 178, 229, 75">
+                                 <Series>
+                                     <asp:Series Name="Series1" ChartArea="ChartArea1" ChartType="Funnel" Legend="Legend1" XValueMember="PoStatus" YValueMembers="PoID" YValuesPerPoint="2"></asp:Series>
+                                 </Series>
+                                 <ChartAreas>
+                                     <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                                 </ChartAreas>
+                                 <Legends>
+                                     <asp:Legend Name="Legend1">
+                                     </asp:Legend>
+                                 </Legends>
+                             </asp:Chart>
+
+
+
+
+
+                               <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:boxwear %>" SelectCommand="SELECT [PoID], [PoStatus] FROM [PurchaseOrderItems]"></asp:SqlDataSource>
+
+
+
+
+
+                              <div class="card-footer ">
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
+                                    </div>
+                    </div>
+                             </div>
+                         </div>
+
+
+
+
+                  <div class="col-md-4" style="padding-left:130px;">
                          <div class="card" style="width: 18rem;">
+                             <div class="card-header ">
+                            <h3 class="card-title"><strong>Buy Items in Bulk</strong></h3>
+                            <p class="card-category">Last Generated Date and Amount</p>
+                        </div>
+
                              <img src="images/cap.jpg" class="card-img-top" alt="..."/>
                              <div class="card-body">
                                  <h3><strong>Supreme Cap </strong></h3>
                                  <p class="card-text">Buy in bulk and enjoy cheaper price @ $4 each</p>
-                                 <asp:Button ID="btnProduct" runat="server" Text="Shop Now!" Height="46px" Width="125px" style="background-color:red" ForeColor="White" OnClick="btnProduct_Click" />
+                                 <asp:Button ID="btnProduct" runat="server" Text="Shop Now!" Height="46px" Width="125px" OnClick="btnProduct_Click" />
                              </div>
                          </div>
                          </div>
 
-                 
-
-
-
-
                    </div>
-
 
 
 

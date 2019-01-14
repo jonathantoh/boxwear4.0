@@ -67,15 +67,6 @@ namespace thebigfour {
         protected global::System.Web.UI.WebControls.Image Image2;
         
         /// <summary>
-        /// DataList1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataList1;
-        
-        /// <summary>
         /// lblProdID control.
         /// </summary>
         /// <remarks>
@@ -121,12 +112,12 @@ namespace thebigfour {
         protected global::System.Web.UI.WebControls.Label lblTotal;
         
         /// <summary>
-        /// btnCO control.
+        /// createDo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCO;
+        protected global::System.Web.UI.WebControls.Button createDo;
     }
 }

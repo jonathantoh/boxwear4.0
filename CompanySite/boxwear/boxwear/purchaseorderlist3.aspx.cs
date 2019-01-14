@@ -85,7 +85,7 @@ namespace boxwear
                 unitPrice += "," + row.Cells[3].Text;
             }
 
-            po.CreatePOI(productID, desc, quantity, unitPrice);
+            po.CreatePOI(productID, desc, quantity, unitPrice,"New");
 
 
 

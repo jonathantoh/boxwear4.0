@@ -19,6 +19,10 @@ namespace boxwear
         [OperationContract]
         DataSet GetOrderDetails(int PONum);
 
+
+        [OperationContract]
+        DataSet updatePOStatus(int PoID);
+
         //[OperationContract]
         //DataSet GetProductCatalogueDetails();
     }

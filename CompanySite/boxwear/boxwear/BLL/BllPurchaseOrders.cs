@@ -46,11 +46,11 @@ namespace boxwear.BLL
             return dataLayerProgram.GetProductCatalogue();
         }
 
-        public int CreatePOI(string productID, string ProductDesc, string quantity, string unitPrice)
+        public int CreatePOI(string productID, string ProductDesc, string quantity, string unitPrice, string status)
         {
             DalPurchaseOrders dataLayerProgram;
             dataLayerProgram = new DalPurchaseOrders();
-            return dataLayerProgram.CreatePOI(productID, ProductDesc, quantity, unitPrice);
+            return dataLayerProgram.CreatePOI(productID, ProductDesc, quantity, unitPrice, status);
         }
 
         public int InsertCatalogue(int productID, string name, string ProductDesc, int quantity, decimal unitPrice)
@@ -80,5 +80,11 @@ namespace boxwear.BLL
         //    dataLayerProgram = new DalPurchaseOrders();
         //    return dataLayerProgram.GetProductUsingID(IDs);
         //}
+        public DataSet updatePOStatus(int PoID)
+        {
+            DalPurchaseOrders dataLayerProgram;
+            dataLayerProgram = new DalPurchaseOrders();
+            return dataLayerProgram.updatePOStatus(PoID);
+        }
     }
 }

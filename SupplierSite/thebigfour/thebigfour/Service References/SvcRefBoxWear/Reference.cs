@@ -26,6 +26,12 @@ namespace thebigfour.SvcRefBoxWear {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsBoxWear/GetOrderDetails", ReplyAction="http://tempuri.org/IWsBoxWear/GetOrderDetailsResponse")]
         System.Threading.Tasks.Task<System.Data.DataSet> GetOrderDetailsAsync(int PONum);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsBoxWear/updatePOStatus", ReplyAction="http://tempuri.org/IWsBoxWear/updatePOStatusResponse")]
+        System.Data.DataSet updatePOStatus(int PoID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsBoxWear/updatePOStatus", ReplyAction="http://tempuri.org/IWsBoxWear/updatePOStatusResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> updatePOStatusAsync(int PoID);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,6 +75,14 @@ namespace thebigfour.SvcRefBoxWear {
         
         public System.Threading.Tasks.Task<System.Data.DataSet> GetOrderDetailsAsync(int PONum) {
             return base.Channel.GetOrderDetailsAsync(PONum);
+        }
+        
+        public System.Data.DataSet updatePOStatus(int PoID) {
+            return base.Channel.updatePOStatus(PoID);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> updatePOStatusAsync(int PoID) {
+            return base.Channel.updatePOStatusAsync(PoID);
         }
     }
 }

@@ -167,15 +167,15 @@ namespace boxwear.DAL
             return PO;
         }
 
-        public int CreatePOI(string productID, string ProductDesc, string quantity, string unitPrice)
+        public int CreatePOI(string productID, string ProductDesc, string quantity, string unitPrice, string status)
         {
             StringBuilder sql;
             SqlCommand cmd;
             int result;
             result = 0;
             sql = new StringBuilder();
-            sql.AppendLine("INSERT INTO PurchaseOrderItems(ListOfProductID,ProdDesc,ListOfProductQty, ListOfUnitPrice)");
-            sql.AppendLine("VALUES (@productID, @productDesc, @productQty, @UnitPrice)");
+            sql.AppendLine("INSERT INTO PurchaseOrderItems(ListOfProductID,ProdDesc,ListOfProductQty, ListOfUnitPrice, PoStatus)");
+            sql.AppendLine("VALUES (@productID, @productDesc, @productQty, @UnitPrice, @status)");
             SqlConnection conn = dbConn.GetConnection();
             conn.Open();
 
@@ -186,6 +186,8 @@ namespace boxwear.DAL
                 cmd.Parameters.AddWithValue("@productDesc", ProductDesc);
                 cmd.Parameters.AddWithValue("@productQty", quantity);
                 cmd.Parameters.AddWithValue("@UnitPrice", unitPrice);
+                cmd.Parameters.AddWithValue("@status", status);
+
                 //cmd.Parameters.AddWithValue("@PONum", PONum);
 
                 // cmd.Parameters.AddWithValue("@PoID", PoID);
@@ -348,25 +350,6 @@ namespace boxwear.DAL
 
             return ProgramData;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             //List<DalPurchaseOrders> prodList = GetProductCatalogueDetails();
             //List<DalPurchaseOrders> purchase = new List<DalPurchaseOrders>();
             //for (int i = 0; i < prodList.Count; i++)
@@ -430,6 +413,41 @@ namespace boxwear.DAL
 
 
 
+        }
+
+
+
+        public DataSet updatePOStatus(int PoID)
+        {
+            StringBuilder sql;
+            SqlDataAdapter da;
+            DataSet ProgramData;
+
+            SqlConnection conn = dbConn.GetConnection();
+
+            ProgramData = new DataSet();
+            sql = new StringBuilder();
+            sql.AppendLine("UPDATE PurchaseOrderItems");
+            sql.AppendLine("SET PoStatus = @POs");
+            sql.AppendLine("WHERE PoID = @POId");
+
+            try
+            {
+                da = new SqlDataAdapter(sql.ToString(), conn);
+                da.SelectCommand.Parameters.AddWithValue("POId", PoID);
+                da.SelectCommand.Parameters.AddWithValue("POs", "Processing");
+                da.Fill(ProgramData);
+            }
+            catch (Exception ex)
+            {
+                errMsg = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return ProgramData;
         }
 
 

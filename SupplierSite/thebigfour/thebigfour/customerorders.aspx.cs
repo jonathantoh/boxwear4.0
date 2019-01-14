@@ -23,7 +23,7 @@ namespace thebigfour
         {
             GridViewRow row = gvCustomer.SelectedRow;
             string CONum = row.Cells[0].Text;
-            Response.Redirect("viewCO.aspx?CONum=" + CONum);
+            Response.Redirect("viewCO.aspx?CONo=" + CONum);
         }
 
         private void BindAllCO()

@@ -28,5 +28,16 @@ namespace thebigfour.BLL
 
             return dataSetOrdDetailList;
         }
+
+        public DataSet updatePOStatus(int PoID)
+        {
+            DalPurchaseOrders dal;
+            DataSet dataSetStatus;
+            dal = new DalPurchaseOrders();
+            dataSetStatus = dal.updatePOStatus(PoID);
+            return dataSetStatus;
+        }
+
+    
     }
 }

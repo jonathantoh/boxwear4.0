@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -12,7 +13,22 @@ namespace thebigfour.DAL
     {
         private String errMsg;
         DalDbConn dbConn = new DalDbConn();
+        private int prodID;
+        private string image;
+        string connStr = ConfigurationManager.ConnectionStrings["thebigfour"].ConnectionString;
 
+
+
+        public DalProducts(int prodID)
+        {
+            this.prodID = prodID;
+          
+        }
+
+        public DalProducts()
+        {
+
+        }
         public DataSet GetAllProducts()
         {
             StringBuilder sql;
@@ -43,35 +59,31 @@ namespace thebigfour.DAL
         }
 
 
-        public DataSet GetProductImage(int prodID)
+        public DalProducts GetProductImage(int prodID)
         {
-            StringBuilder sql;
-            SqlDataAdapter da;
-            DataSet ProgramData;
-
-            SqlConnection conn = dbConn.GetConnection();
-
-            ProgramData = new DataSet();
-            sql = new StringBuilder();
-            sql.AppendLine("SELECT ProductImage FROM Products WHERE ProductID=@prodID");
-
-            try
+            DalProducts prodDetail = null;
+            string  prodImage;
+           
+            string queryStr = "SELECT ProductImage FROM Products WHERE ProductID = @ProdID";
+            SqlConnection conn = new SqlConnection(connStr);
+            SqlCommand cmd = new SqlCommand(queryStr, conn);
+            cmd.Parameters.AddWithValue("@ProdID", prodID);
+            conn.Open();
+            SqlDataReader dr = cmd.ExecuteReader();
+            //Check if there are any resultsets
+            if (dr.Read())
             {
-                da = new SqlDataAdapter(sql.ToString(), conn);
-                da.SelectCommand.Parameters.AddWithValue("prodID", prodID);
-                da.Fill(ProgramData);
+                prodImage = dr["ProductImage"].ToString();
+                prodDetail = new DalProducts(prodID);
             }
-            catch (Exception ex)
-            {
-                errMsg = ex.Message;
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-            return ProgramData;
+           
+            conn.Close();
+            dr.Close();
+            dr.Dispose();
+            return prodDetail;
         }
+
+      
 
     }
 }

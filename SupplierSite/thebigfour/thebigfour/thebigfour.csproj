@@ -104,7 +104,6 @@
     <Content Include="assets\css\Footer-with-logo.css" />
     <Content Include="assets\css\Footer-with-social-icons.css" />
     <Content Include="assets\demo.js" />
-    <Content Include="createDO.aspx" />
     <Content Include="customerorders.aspx" />
     <Content Include="default.aspx" />
     <Content Include="delivery-images\boxwear-resize.png" />
@@ -112,6 +111,7 @@
     <Content Include="delivery-images\delivery.png" />
     <Content Include="delivery-images\delivery_01.png" />
     <Content Include="delivery-images\logo.png" />
+    <Content Include="image.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -153,16 +153,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BllCustomerOrders.cs" />
+    <Compile Include="BLL\BllDeliveryOrders.cs" />
     <Compile Include="BLL\BllProducts.cs" />
     <Compile Include="BLL\BllPurchaseOrder.cs" />
     <Compile Include="BLL\BllPurchaseOrders.cs" />
-    <Compile Include="createDO.aspx.cs">
-      <DependentUpon>createDO.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="createDO.aspx.designer.cs">
-      <DependentUpon>createDO.aspx</DependentUpon>
-    </Compile>
     <Compile Include="customerorders.aspx.cs">
       <DependentUpon>customerorders.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,6 +166,7 @@
     </Compile>
     <Compile Include="DAL\DalCustomerOrders.cs" />
     <Compile Include="DAL\DalDbConn.cs" />
+    <Compile Include="DAL\DalDeliveryOrders.cs" />
     <Compile Include="DAL\DalProducts.cs" />
     <Compile Include="DAL\DalPurchaseOrders.cs" />
     <Compile Include="DAL\DalViewPurchaseOrder.cs" />
@@ -181,6 +176,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="image.aspx.cs">
+      <DependentUpon>image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="image.aspx.designer.cs">
+      <DependentUpon>image.aspx</DependentUpon>
     </Compile>
     <Compile Include="IWsTheBigFour.cs" />
     <Compile Include="pendingpurchaseorders.aspx.cs">

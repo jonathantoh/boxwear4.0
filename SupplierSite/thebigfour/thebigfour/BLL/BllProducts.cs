@@ -19,13 +19,14 @@ namespace thebigfour.BLL
         }
 
         //KIV
-        public DataSet GetProductImage(int prodID)
+        public DalProducts GetProductImage(int prodID)
         {
-            DalProducts dal;
-            DataSet dataSetProductList;
-            dal = new DalProducts();
-            dataSetProductList = dal.GetProductImage(prodID);
-            return dataSetProductList;
+            DalProducts dal = new DalProducts();
+           return dal.GetProductImage(prodID);
         }
+
+       
+
+
     }
 }

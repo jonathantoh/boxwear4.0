@@ -27,6 +27,13 @@ namespace boxwear
             return bizLayerProgram.GetOrderDetails(PONum);
         }
 
+        public DataSet updatePOStatus(int PoID)
+        {
+            boxwear.BLL.BllPurchaseOrders bizLayerProgram;
+            bizLayerProgram = new boxwear.BLL.BllPurchaseOrders();
+            return bizLayerProgram.updatePOStatus(PoID);
+        }
+
         //public List<DalPurchaseOrders> GetProductUsingID(int[] IDs)
         //{
         //    boxwear.BLL.BllPurchaseOrders bizLayerProgram;

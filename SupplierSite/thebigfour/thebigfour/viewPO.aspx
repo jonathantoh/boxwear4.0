@@ -96,14 +96,9 @@
               <table class="auto-style11">
                   <tr>
                       <td class="auto-style10" rowspan="9">
-                          <asp:Image ID="Image2" runat="server" ImageUrl='<%# Eval("ProductImage") %>'/>
+                          <asp:Image ID="Image2" runat="server"/>
                           <br />
                           <br />
-                          <asp:DataList ID="DataList1" runat="server" Width="79px">
-                              <ItemTemplate>
-                                  <asp:Image ID="Image5" runat="server" ImageUrl='<%# Eval("ProductImage") %>' />
-                              </ItemTemplate>
-                          </asp:DataList>
                       </td>
                       <td>&nbsp;Product ID :&nbsp;
                           <asp:Label ID="lblProdID" runat="server"></asp:Label>
@@ -145,5 +140,9 @@
     </asp:Panel>
 
          <br />
-<asp:Button ID="btnCO" runat="server" Text="Create CO" Height="49px" OnClick="btnCO_Click" Width="188px"></asp:Button>
+<%--<asp:Button ID="btnCO" runat="server" Text="Create CO" Height="49px" OnClick="btnCO_Click" Width="188px"></asp:Button>--%>
+&nbsp;&nbsp;
+          <br />
+          <asp:Button ID="createDo" runat="server" Height="54px" OnClick="createDo_Click" Text="Create Delivery Order" Width="187px" />
+
 </asp:Content>
