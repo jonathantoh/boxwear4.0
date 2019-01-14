@@ -20,6 +20,21 @@ namespace thebigfour.DAL
             return programSupplierClient.GetPOList();
         }
 
-      
+        public DataSet GetOrderDetails(int PONum)
+        {
+            WsBoxWearClient programSupplierClient;
+            programSupplierClient = new WsBoxWearClient();
+            return programSupplierClient.GetOrderDetails(PONum);
+        }
+
+        //public DataSet GetProductUsingID(int[] IDs)
+        //{
+        //    WsBoxWearClient programSupplierClient;
+        //    programSupplierClient = new WsBoxWearClient();
+        //    return programSupplierClient.GetProductUsingID(IDs);
+        //}
+
+
+
     }
 }

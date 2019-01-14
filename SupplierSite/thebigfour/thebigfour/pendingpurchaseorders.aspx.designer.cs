@@ -13,6 +13,33 @@ namespace thebigfour {
     public partial class pendingpurchaseorders {
         
         /// <summary>
+        /// lbl_num control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_num;
+        
+        /// <summary>
+        /// lbl_amt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_amt;
+        
+        /// <summary>
+        /// lbl_company control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_company;
+        
+        /// <summary>
         /// gvPurchase control.
         /// </summary>
         /// <remarks>

@@ -18,14 +18,14 @@ namespace boxwear.BLL
             return ds;
         }
 
-        public DataSet GetProductImage()
-        {
-            DalProducts dal;
-            DataSet ds;
-            dal = new DalProducts();
-            ds = dal.GetProductImage();
-            return ds;
-        }
+        //public DataSet GetProductImage()
+        //{
+        //    DalProducts dal;
+        //    DataSet ds;
+        //    dal = new DalProducts();
+        //    ds = dal.GetProductImage();
+        //    return ds;
+        //}
 
     }
 }

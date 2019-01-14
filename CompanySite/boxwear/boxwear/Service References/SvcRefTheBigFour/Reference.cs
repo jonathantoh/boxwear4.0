@@ -28,10 +28,10 @@ namespace boxwear.SvcRefTheBigFour {
         System.Threading.Tasks.Task<System.Data.DataSet> GetAllProductsAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetProductImage", ReplyAction="http://tempuri.org/IWsTheBigFour/GetProductImageResponse")]
-        System.Data.DataSet GetProductImage();
+        System.Data.DataSet GetProductImage(int prodID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetProductImage", ReplyAction="http://tempuri.org/IWsTheBigFour/GetProductImageResponse")]
-        System.Threading.Tasks.Task<System.Data.DataSet> GetProductImageAsync();
+        System.Threading.Tasks.Task<System.Data.DataSet> GetProductImageAsync(int prodID);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -77,12 +77,12 @@ namespace boxwear.SvcRefTheBigFour {
             return base.Channel.GetAllProductsAsync();
         }
         
-        public System.Data.DataSet GetProductImage() {
-            return base.Channel.GetProductImage();
+        public System.Data.DataSet GetProductImage(int prodID) {
+            return base.Channel.GetProductImage(prodID);
         }
         
-        public System.Threading.Tasks.Task<System.Data.DataSet> GetProductImageAsync() {
-            return base.Channel.GetProductImageAsync();
+        public System.Threading.Tasks.Task<System.Data.DataSet> GetProductImageAsync(int prodID) {
+            return base.Channel.GetProductImageAsync(prodID);
         }
     }
 }

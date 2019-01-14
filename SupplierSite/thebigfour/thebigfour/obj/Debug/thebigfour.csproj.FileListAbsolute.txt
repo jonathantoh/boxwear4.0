@@ -28,6 +28,6 @@ C:\Users\Joan Ng\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\
 C:\Users\Joan Ng\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Joan Ng\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Joan Ng\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Joan Ng\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\obj\Debug\thebigfour.csprojResolveAssemblyReference.cache
 C:\Users\Joan Ng\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\obj\Debug\thebigfour.dll
 C:\Users\Joan Ng\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\obj\Debug\thebigfour.pdb
+C:\Users\Joan Ng\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\obj\Debug\thebigfour.csprojResolveAssemblyReference.cache

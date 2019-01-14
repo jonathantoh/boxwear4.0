@@ -43,7 +43,7 @@ namespace thebigfour.DAL
         }
 
 
-        public DataSet GetProductImage()
+        public DataSet GetProductImage(int prodID)
         {
             StringBuilder sql;
             SqlDataAdapter da;
@@ -53,11 +53,12 @@ namespace thebigfour.DAL
 
             ProgramData = new DataSet();
             sql = new StringBuilder();
-            sql.AppendLine("SELECT ProductImage FROM Products");
+            sql.AppendLine("SELECT ProductImage FROM Products WHERE ProductID=@prodID");
 
             try
             {
                 da = new SqlDataAdapter(sql.ToString(), conn);
+                da.SelectCommand.Parameters.AddWithValue("prodID", prodID);
                 da.Fill(ProgramData);
             }
             catch (Exception ex)

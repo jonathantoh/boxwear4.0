@@ -1,4 +1,5 @@
-﻿using System;
+﻿using boxwear.DAL;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -18,6 +19,20 @@ namespace boxwear
             bizLayerPrograms = new boxwear.BLL.BllPurchaseOrders();
             return bizLayerPrograms.GetPOList();
         }
+
+        public DataSet GetOrderDetails(int PONum)
+        {
+            boxwear.BLL.BllPurchaseOrders bizLayerProgram;
+            bizLayerProgram = new boxwear.BLL.BllPurchaseOrders();
+            return bizLayerProgram.GetOrderDetails(PONum);
+        }
+
+        //public List<DalPurchaseOrders> GetProductUsingID(int[] IDs)
+        //{
+        //    boxwear.BLL.BllPurchaseOrders bizLayerProgram;
+        //    bizLayerProgram = new boxwear.BLL.BllPurchaseOrders();
+        //    return bizLayerProgram.GetProductUsingID(IDs);
+        //}
 
     }
 }

@@ -145,6 +145,8 @@
                             <li><a href="MenProducts3.aspx">Men</a></li>
                             <li><a href="WomenProduct2.aspx">Women</a></li>
                             <li><a href="AboutUs.aspx">About Us</a></li>
+                            <li><a href="customerorders.aspx">View Customer Orders</a></li>
+
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="delivery-login.aspx">

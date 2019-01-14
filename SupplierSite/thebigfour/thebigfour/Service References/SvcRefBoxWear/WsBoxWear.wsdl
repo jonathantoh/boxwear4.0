@@ -26,6 +26,32 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="GetOrderDetails">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PONum" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetOrderDetailsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetOrderDetailsResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:element ref="xs:schema" />
+                  <xs:any />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
     </xs:schema>
     <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <xs:element name="anyType" nillable="true" type="xs:anyType" />
@@ -90,16 +116,35 @@
   <wsdl:message name="IWsBoxWear_GetPOList_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetPOListResponse" />
   </wsdl:message>
+  <wsdl:message name="IWsBoxWear_GetOrderDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderDetails" />
+  </wsdl:message>
+  <wsdl:message name="IWsBoxWear_GetOrderDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderDetailsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IWsBoxWear">
     <wsdl:operation name="GetPOList">
       <wsdl:input wsaw:Action="http://tempuri.org/IWsBoxWear/GetPOList" message="tns:IWsBoxWear_GetPOList_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IWsBoxWear/GetPOListResponse" message="tns:IWsBoxWear_GetPOList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsBoxWear/GetOrderDetails" message="tns:IWsBoxWear_GetOrderDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsBoxWear/GetOrderDetailsResponse" message="tns:IWsBoxWear_GetOrderDetails_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IWsBoxWear" type="tns:IWsBoxWear">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetPOList">
       <soap:operation soapAction="http://tempuri.org/IWsBoxWear/GetPOList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetails">
+      <soap:operation soapAction="http://tempuri.org/IWsBoxWear/GetOrderDetails" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

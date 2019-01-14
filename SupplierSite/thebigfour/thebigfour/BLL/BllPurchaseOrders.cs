@@ -17,5 +17,16 @@ namespace thebigfour.BLL
             dataSetCOList = dal.GetOrder();
             return dataSetCOList;
         }
+
+        public DataSet GetOrderDetails(int PONum)
+        {
+            DalPurchaseOrders dal;
+            DataSet dataSetOrdDetailList;
+
+            dal = new DalPurchaseOrders();
+            dataSetOrdDetailList = dal.GetOrderDetails(PONum);
+
+            return dataSetOrdDetailList;
+        }
     }
 }

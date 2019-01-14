@@ -104,6 +104,8 @@
     <Content Include="assets\css\Footer-with-logo.css" />
     <Content Include="assets\css\Footer-with-social-icons.css" />
     <Content Include="assets\demo.js" />
+    <Content Include="createDO.aspx" />
+    <Content Include="customerorders.aspx" />
     <Content Include="default.aspx" />
     <Content Include="delivery-images\boxwear-resize.png" />
     <Content Include="delivery-images\delivery-bg.png" />
@@ -127,6 +129,8 @@
     <Content Include="supplier-images\pants1.jpg" />
     <Content Include="supplier-images\supreme1.jpg" />
     <Content Include="supplier-MasterPage.Master" />
+    <Content Include="viewCO.aspx" />
+    <Content Include="viewPO.aspx" />
     <Content Include="WsTheBigFour.svc" />
     <None Include="Service References\SvcRefBoxWear\WsBoxWear.wsdl" />
     <None Include="Web.Debug.config">
@@ -148,9 +152,25 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BllCustomerOrders.cs" />
     <Compile Include="BLL\BllProducts.cs" />
     <Compile Include="BLL\BllPurchaseOrder.cs" />
     <Compile Include="BLL\BllPurchaseOrders.cs" />
+    <Compile Include="createDO.aspx.cs">
+      <DependentUpon>createDO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createDO.aspx.designer.cs">
+      <DependentUpon>createDO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customerorders.aspx.cs">
+      <DependentUpon>customerorders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customerorders.aspx.designer.cs">
+      <DependentUpon>customerorders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DalCustomerOrders.cs" />
     <Compile Include="DAL\DalDbConn.cs" />
     <Compile Include="DAL\DalProducts.cs" />
     <Compile Include="DAL\DalPurchaseOrders.cs" />
@@ -189,6 +209,20 @@
     </Compile>
     <Compile Include="supplier-MasterPage.Master.designer.cs">
       <DependentUpon>supplier-MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="viewCO.aspx.cs">
+      <DependentUpon>viewCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewCO.aspx.designer.cs">
+      <DependentUpon>viewCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewPO.aspx.cs">
+      <DependentUpon>viewPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewPO.aspx.designer.cs">
+      <DependentUpon>viewPO.aspx</DependentUpon>
     </Compile>
     <Compile Include="WsTheBigFour.svc.cs">
       <DependentUpon>WsTheBigFour.svc</DependentUpon>

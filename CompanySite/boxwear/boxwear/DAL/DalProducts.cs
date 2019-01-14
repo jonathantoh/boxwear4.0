@@ -17,11 +17,11 @@ namespace boxwear.DAL
             return ProdSupplierClient.GetAllProducts();
         }
 
-        public DataSet GetProductImage()
-        {
-            WsTheBigFourClient ProdSupplierClient;
-            ProdSupplierClient = new WsTheBigFourClient();
-            return ProdSupplierClient.GetProductImage();
-        }
+        //public DataSet GetProductImage()
+        //{
+        //    WsTheBigFourClient ProdSupplierClient;
+        //    ProdSupplierClient = new WsTheBigFourClient();
+        //    return ProdSupplierClient.GetProductImage();
+        //}
     }
 }

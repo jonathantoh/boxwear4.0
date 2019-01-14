@@ -144,6 +144,8 @@
     </Content>
     <Content Include="Main.Master" />
     <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <Content Include="purchaseorderlist2.aspx" />
+    <Content Include="purchaseorderlist3.aspx" />
     <Content Include="test.aspx" />
     <Content Include="WsBoxWear.svc" />
     <None Include="Service References\SvcRefTheBigFour\WsTheBigFour.wsdl" />
@@ -206,6 +208,20 @@
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchaseorderlist2.aspx.cs">
+      <DependentUpon>purchaseorderlist2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="purchaseorderlist2.aspx.designer.cs">
+      <DependentUpon>purchaseorderlist2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="purchaseorderlist3.aspx.cs">
+      <DependentUpon>purchaseorderlist3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="purchaseorderlist3.aspx.designer.cs">
+      <DependentUpon>purchaseorderlist3.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Service References\SvcRefTheBigFour\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

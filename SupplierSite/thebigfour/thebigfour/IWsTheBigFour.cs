@@ -19,7 +19,7 @@ namespace thebigfour
         DataSet GetAllProducts();
 
         [OperationContract]
-        DataSet GetProductImage();
+        DataSet GetProductImage(int prodID);
 
     }
 }

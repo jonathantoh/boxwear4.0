@@ -28,11 +28,11 @@ namespace thebigfour
             return bizLayerProducts.GetAllProducts();
         }
 
-        public DataSet GetProductImage()
+        public DataSet GetProductImage(int prodID)
         {
             thebigfour.BLL.BllProducts bizLayerProducts;
             bizLayerProducts = new thebigfour.BLL.BllProducts();
-            return bizLayerProducts.GetProductImage();
+            return bizLayerProducts.GetProductImage(prodID);
         }
     }
 }

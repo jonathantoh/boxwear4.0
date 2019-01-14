@@ -13,6 +13,15 @@ namespace boxwear {
     public partial class ProductCatalogue {
         
         /// <summary>
+        /// gvProduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvProduct;
+        
+        /// <summary>
         /// Panel1 control.
         /// </summary>
         /// <remarks>
@@ -67,15 +76,6 @@ namespace boxwear {
         protected global::System.Web.UI.WebControls.TextBox tbQuantity;
         
         /// <summary>
-        /// btnReturn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReturn;
-        
-        /// <summary>
         /// btnNext control.
         /// </summary>
         /// <remarks>
@@ -83,14 +83,5 @@ namespace boxwear {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnNext;
-        
-        /// <summary>
-        /// gvProduct control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvProduct;
     }
 }

@@ -20,6 +20,12 @@ namespace thebigfour.SvcRefBoxWear {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsBoxWear/GetPOList", ReplyAction="http://tempuri.org/IWsBoxWear/GetPOListResponse")]
         System.Threading.Tasks.Task<System.Data.DataSet> GetPOListAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsBoxWear/GetOrderDetails", ReplyAction="http://tempuri.org/IWsBoxWear/GetOrderDetailsResponse")]
+        System.Data.DataSet GetOrderDetails(int PONum);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsBoxWear/GetOrderDetails", ReplyAction="http://tempuri.org/IWsBoxWear/GetOrderDetailsResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> GetOrderDetailsAsync(int PONum);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +61,14 @@ namespace thebigfour.SvcRefBoxWear {
         
         public System.Threading.Tasks.Task<System.Data.DataSet> GetPOListAsync() {
             return base.Channel.GetPOListAsync();
+        }
+        
+        public System.Data.DataSet GetOrderDetails(int PONum) {
+            return base.Channel.GetOrderDetails(PONum);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> GetOrderDetailsAsync(int PONum) {
+            return base.Channel.GetOrderDetailsAsync(PONum);
         }
     }
 }

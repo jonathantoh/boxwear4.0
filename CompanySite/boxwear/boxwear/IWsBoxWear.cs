@@ -1,4 +1,5 @@
-﻿using System;
+﻿using boxwear.DAL;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -14,5 +15,11 @@ namespace boxwear
     {
         [OperationContract]
         DataSet GetPOList();
+
+        [OperationContract]
+        DataSet GetOrderDetails(int PONum);
+
+        //[OperationContract]
+        //DataSet GetProductCatalogueDetails();
     }
 }
