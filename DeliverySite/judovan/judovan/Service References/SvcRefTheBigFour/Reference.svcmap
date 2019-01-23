@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="509dd61b-4b25-407b-b95e-7ea50fdb1d31" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:60523/WsTheBigFour.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WsTheBigFour.disco" MetadataType="Disco" ID="dc388f60-7a09-4492-af9a-48bafe7f62cc" SourceId="1" SourceUrl="http://localhost:60523/WsTheBigFour.svc?disco" />
+    <MetadataFile FileName="WsTheBigFour.xsd" MetadataType="Schema" ID="1249f31e-f783-4611-b59f-cd1ab18a5de0" SourceId="1" SourceUrl="http://localhost:60523/WsTheBigFour.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsTheBigFour1.xsd" MetadataType="Schema" ID="05c9e3e7-2231-4aec-9f3e-6926081797d9" SourceId="1" SourceUrl="http://localhost:60523/WsTheBigFour.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsTheBigFour2.xsd" MetadataType="Schema" ID="e666902f-fb61-4758-8995-02a176ec4a35" SourceId="1" SourceUrl="http://localhost:60523/WsTheBigFour.svc?xsd=xsd2" />
+    <MetadataFile FileName="WsTheBigFour.wsdl" MetadataType="Wsdl" ID="05cf063d-64b2-439f-bebe-2bd4052e79c3" SourceId="1" SourceUrl="http://localhost:60523/WsTheBigFour.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WsTheBigFour" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:60523/WsTheBigFour.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:60523/WsTheBigFour.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:60523/WsTheBigFour.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWsTheBigFour_GetAllPurchaseOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPurchaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetAllPurchaseOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPurchaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetAllProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProducts" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetAllProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAll" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetDeliveryDetailsByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryDetailsByID" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetDeliveryDetailsByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryDetailsByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_updateDOStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateDOStatus" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_updateDOStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateDOStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetInvoiceByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceByID" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetInvoiceByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetAllInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllInvoice" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetAllInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_UpdateInvoicePayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInvoicePayment" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_UpdateInvoicePayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInvoicePaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_insertInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertInvoice" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_insertInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_updateDeliveryInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateDeliveryInvoice" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_updateDeliveryInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateDeliveryInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetInvoiceByTrackingID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceByTrackingID" />
+  </wsdl:message>
+  <wsdl:message name="IWsTheBigFour_GetInvoiceByTrackingID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceByTrackingIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWsTheBigFour">
+    <wsdl:operation name="GetAllPurchaseOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/GetAllPurchaseOrder" message="tns:IWsTheBigFour_GetAllPurchaseOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/GetAllPurchaseOrderResponse" message="tns:IWsTheBigFour_GetAllPurchaseOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProducts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/GetAllProducts" message="tns:IWsTheBigFour_GetAllProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/GetAllProductsResponse" message="tns:IWsTheBigFour_GetAllProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/GetAll" message="tns:IWsTheBigFour_GetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/GetAllResponse" message="tns:IWsTheBigFour_GetAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveryDetailsByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/GetDeliveryDetailsByID" message="tns:IWsTheBigFour_GetDeliveryDetailsByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/GetDeliveryDetailsByIDResponse" message="tns:IWsTheBigFour_GetDeliveryDetailsByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDOStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/updateDOStatus" message="tns:IWsTheBigFour_updateDOStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/updateDOStatusResponse" message="tns:IWsTheBigFour_updateDOStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/GetInvoiceByID" message="tns:IWsTheBigFour_GetInvoiceByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/GetInvoiceByIDResponse" message="tns:IWsTheBigFour_GetInvoiceByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/GetAllInvoice" message="tns:IWsTheBigFour_GetAllInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/GetAllInvoiceResponse" message="tns:IWsTheBigFour_GetAllInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInvoicePayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/UpdateInvoicePayment" message="tns:IWsTheBigFour_UpdateInvoicePayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/UpdateInvoicePaymentResponse" message="tns:IWsTheBigFour_UpdateInvoicePayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/insertInvoice" message="tns:IWsTheBigFour_insertInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/insertInvoiceResponse" message="tns:IWsTheBigFour_insertInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDeliveryInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/updateDeliveryInvoice" message="tns:IWsTheBigFour_updateDeliveryInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/updateDeliveryInvoiceResponse" message="tns:IWsTheBigFour_updateDeliveryInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceByTrackingID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTheBigFour/GetInvoiceByTrackingID" message="tns:IWsTheBigFour_GetInvoiceByTrackingID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTheBigFour/GetInvoiceByTrackingIDResponse" message="tns:IWsTheBigFour_GetInvoiceByTrackingID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWsTheBigFour" type="tns:IWsTheBigFour">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllPurchaseOrder">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/GetAllPurchaseOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProducts">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/GetAllProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveryDetailsByID">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/GetDeliveryDetailsByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDOStatus">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/updateDOStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceByID">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/GetInvoiceByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInvoice">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/GetAllInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInvoicePayment">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/UpdateInvoicePayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertInvoice">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/insertInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDeliveryInvoice">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/updateDeliveryInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceByTrackingID">
+      <soap:operation soapAction="http://tempuri.org/IWsTheBigFour/GetInvoiceByTrackingID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsTheBigFour">
+    <wsdl:port name="BasicHttpBinding_IWsTheBigFour" binding="tns:BasicHttpBinding_IWsTheBigFour">
+      <soap:address location="http://localhost:60523/WsTheBigFour.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

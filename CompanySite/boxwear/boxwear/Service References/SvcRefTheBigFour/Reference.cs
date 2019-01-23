@@ -27,11 +27,59 @@ namespace boxwear.SvcRefTheBigFour {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetAllProducts", ReplyAction="http://tempuri.org/IWsTheBigFour/GetAllProductsResponse")]
         System.Threading.Tasks.Task<System.Data.DataSet> GetAllProductsAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetProductImage", ReplyAction="http://tempuri.org/IWsTheBigFour/GetProductImageResponse")]
-        System.Data.DataSet GetProductImage(int prodID);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetAll", ReplyAction="http://tempuri.org/IWsTheBigFour/GetAllResponse")]
+        System.Data.DataSet GetAll();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetProductImage", ReplyAction="http://tempuri.org/IWsTheBigFour/GetProductImageResponse")]
-        System.Threading.Tasks.Task<System.Data.DataSet> GetProductImageAsync(int prodID);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetAll", ReplyAction="http://tempuri.org/IWsTheBigFour/GetAllResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> GetAllAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetDeliveryDetailsByID", ReplyAction="http://tempuri.org/IWsTheBigFour/GetDeliveryDetailsByIDResponse")]
+        System.Data.DataSet GetDeliveryDetailsByID(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetDeliveryDetailsByID", ReplyAction="http://tempuri.org/IWsTheBigFour/GetDeliveryDetailsByIDResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> GetDeliveryDetailsByIDAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/updateDOStatus", ReplyAction="http://tempuri.org/IWsTheBigFour/updateDOStatusResponse")]
+        System.Data.DataSet updateDOStatus(int id, string status);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/updateDOStatus", ReplyAction="http://tempuri.org/IWsTheBigFour/updateDOStatusResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> updateDOStatusAsync(int id, string status);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetInvoiceByID", ReplyAction="http://tempuri.org/IWsTheBigFour/GetInvoiceByIDResponse")]
+        System.Data.DataSet GetInvoiceByID(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetInvoiceByID", ReplyAction="http://tempuri.org/IWsTheBigFour/GetInvoiceByIDResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> GetInvoiceByIDAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetAllInvoice", ReplyAction="http://tempuri.org/IWsTheBigFour/GetAllInvoiceResponse")]
+        System.Data.DataSet GetAllInvoice();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetAllInvoice", ReplyAction="http://tempuri.org/IWsTheBigFour/GetAllInvoiceResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> GetAllInvoiceAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/UpdateInvoicePayment", ReplyAction="http://tempuri.org/IWsTheBigFour/UpdateInvoicePaymentResponse")]
+        System.Data.DataSet UpdateInvoicePayment(int InvoiceID, string ccNo, string ccv, string expDate, string status, System.DateTime paymentDate, string paymentMadeBy);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/UpdateInvoicePayment", ReplyAction="http://tempuri.org/IWsTheBigFour/UpdateInvoicePaymentResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> UpdateInvoicePaymentAsync(int InvoiceID, string ccNo, string ccv, string expDate, string status, System.DateTime paymentDate, string paymentMadeBy);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/insertInvoice", ReplyAction="http://tempuri.org/IWsTheBigFour/insertInvoiceResponse")]
+        int insertInvoice(System.DateTime InvoiceDate, decimal InvoiceAmt, string InvoiceStatus, int PoID, int trackingID, System.DateTime endDate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/insertInvoice", ReplyAction="http://tempuri.org/IWsTheBigFour/insertInvoiceResponse")]
+        System.Threading.Tasks.Task<int> insertInvoiceAsync(System.DateTime InvoiceDate, decimal InvoiceAmt, string InvoiceStatus, int PoID, int trackingID, System.DateTime endDate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/updateDeliveryInvoice", ReplyAction="http://tempuri.org/IWsTheBigFour/updateDeliveryInvoiceResponse")]
+        System.Data.DataSet updateDeliveryInvoice(int id, int InvoiceID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/updateDeliveryInvoice", ReplyAction="http://tempuri.org/IWsTheBigFour/updateDeliveryInvoiceResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> updateDeliveryInvoiceAsync(int id, int InvoiceID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetInvoiceByTrackingID", ReplyAction="http://tempuri.org/IWsTheBigFour/GetInvoiceByTrackingIDResponse")]
+        System.Data.DataSet GetInvoiceByTrackingID(int trackingID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsTheBigFour/GetInvoiceByTrackingID", ReplyAction="http://tempuri.org/IWsTheBigFour/GetInvoiceByTrackingIDResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> GetInvoiceByTrackingIDAsync(int trackingID);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -77,12 +125,76 @@ namespace boxwear.SvcRefTheBigFour {
             return base.Channel.GetAllProductsAsync();
         }
         
-        public System.Data.DataSet GetProductImage(int prodID) {
-            return base.Channel.GetProductImage(prodID);
+        public System.Data.DataSet GetAll() {
+            return base.Channel.GetAll();
         }
         
-        public System.Threading.Tasks.Task<System.Data.DataSet> GetProductImageAsync(int prodID) {
-            return base.Channel.GetProductImageAsync(prodID);
+        public System.Threading.Tasks.Task<System.Data.DataSet> GetAllAsync() {
+            return base.Channel.GetAllAsync();
+        }
+        
+        public System.Data.DataSet GetDeliveryDetailsByID(int id) {
+            return base.Channel.GetDeliveryDetailsByID(id);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> GetDeliveryDetailsByIDAsync(int id) {
+            return base.Channel.GetDeliveryDetailsByIDAsync(id);
+        }
+        
+        public System.Data.DataSet updateDOStatus(int id, string status) {
+            return base.Channel.updateDOStatus(id, status);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> updateDOStatusAsync(int id, string status) {
+            return base.Channel.updateDOStatusAsync(id, status);
+        }
+        
+        public System.Data.DataSet GetInvoiceByID(int id) {
+            return base.Channel.GetInvoiceByID(id);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> GetInvoiceByIDAsync(int id) {
+            return base.Channel.GetInvoiceByIDAsync(id);
+        }
+        
+        public System.Data.DataSet GetAllInvoice() {
+            return base.Channel.GetAllInvoice();
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> GetAllInvoiceAsync() {
+            return base.Channel.GetAllInvoiceAsync();
+        }
+        
+        public System.Data.DataSet UpdateInvoicePayment(int InvoiceID, string ccNo, string ccv, string expDate, string status, System.DateTime paymentDate, string paymentMadeBy) {
+            return base.Channel.UpdateInvoicePayment(InvoiceID, ccNo, ccv, expDate, status, paymentDate, paymentMadeBy);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> UpdateInvoicePaymentAsync(int InvoiceID, string ccNo, string ccv, string expDate, string status, System.DateTime paymentDate, string paymentMadeBy) {
+            return base.Channel.UpdateInvoicePaymentAsync(InvoiceID, ccNo, ccv, expDate, status, paymentDate, paymentMadeBy);
+        }
+        
+        public int insertInvoice(System.DateTime InvoiceDate, decimal InvoiceAmt, string InvoiceStatus, int PoID, int trackingID, System.DateTime endDate) {
+            return base.Channel.insertInvoice(InvoiceDate, InvoiceAmt, InvoiceStatus, PoID, trackingID, endDate);
+        }
+        
+        public System.Threading.Tasks.Task<int> insertInvoiceAsync(System.DateTime InvoiceDate, decimal InvoiceAmt, string InvoiceStatus, int PoID, int trackingID, System.DateTime endDate) {
+            return base.Channel.insertInvoiceAsync(InvoiceDate, InvoiceAmt, InvoiceStatus, PoID, trackingID, endDate);
+        }
+        
+        public System.Data.DataSet updateDeliveryInvoice(int id, int InvoiceID) {
+            return base.Channel.updateDeliveryInvoice(id, InvoiceID);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> updateDeliveryInvoiceAsync(int id, int InvoiceID) {
+            return base.Channel.updateDeliveryInvoiceAsync(id, InvoiceID);
+        }
+        
+        public System.Data.DataSet GetInvoiceByTrackingID(int trackingID) {
+            return base.Channel.GetInvoiceByTrackingID(trackingID);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> GetInvoiceByTrackingIDAsync(int trackingID) {
+            return base.Channel.GetInvoiceByTrackingIDAsync(trackingID);
         }
     }
 }

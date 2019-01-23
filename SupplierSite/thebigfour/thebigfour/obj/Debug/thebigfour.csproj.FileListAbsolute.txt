@@ -64,3 +64,28 @@ C:\Users\Joan Ng\Desktop\EADP\version 3\boxwear4.0\SupplierSite\thebigfour\thebi
 C:\Users\Joan Ng\Desktop\EADP\version 3\boxwear4.0\SupplierSite\thebigfour\thebigfour\obj\Debug\thebigfour.csprojResolveAssemblyReference.cache
 C:\Users\Joan Ng\Desktop\EADP\version 3\boxwear4.0\SupplierSite\thebigfour\thebigfour\obj\Debug\thebigfour.dll
 C:\Users\Joan Ng\Desktop\EADP\version 3\boxwear4.0\SupplierSite\thebigfour\thebigfour\obj\Debug\thebigfour.pdb
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\ApplicationInsights.config
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\csc.exe
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\vbc.exe
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\VBCSCompiler.exe
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\thebigfour.dll.config
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\thebigfour.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\thebigfour.pdb
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\Microsoft.AI.Web.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\obj\Debug\thebigfour.csprojResolveAssemblyReference.cache
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\obj\Debug\thebigfour.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\SupplierSite\thebigfour\thebigfour\obj\Debug\thebigfour.pdb

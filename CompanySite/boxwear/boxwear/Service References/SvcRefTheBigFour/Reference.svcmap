@@ -19,10 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:60522/WsTheBigFour.svc?singleWsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:60523/WsTheBigFour.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WsTheBigFour.wsdl" MetadataType="Wsdl" ID="0037013a-0a27-45dd-9178-89b48ddd8629" SourceId="1" SourceUrl="http://localhost:60522/WsTheBigFour.svc?singleWsdl" />
+    <MetadataFile FileName="WsTheBigFour1.disco" MetadataType="Disco" ID="f213de01-199f-4dea-adb4-3607db026b2d" SourceId="1" SourceUrl="http://localhost:60523/WsTheBigFour.svc?disco" />
+    <MetadataFile FileName="WsTheBigFour3.xsd" MetadataType="Schema" ID="a2457b81-4118-4ee2-802a-e2ee17010134" SourceId="1" SourceUrl="http://localhost:60523/WsTheBigFour.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsTheBigFour31.xsd" MetadataType="Schema" ID="cd988d08-df5f-475d-9699-751e15c98ebf" SourceId="1" SourceUrl="http://localhost:60523/WsTheBigFour.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsTheBigFour32.xsd" MetadataType="Schema" ID="4339ad65-f2ba-44b9-912b-ae67321761a8" SourceId="1" SourceUrl="http://localhost:60523/WsTheBigFour.svc?xsd=xsd2" />
+    <MetadataFile FileName="WsTheBigFour.wsdl" MetadataType="Wsdl" ID="659cbf6e-d975-431b-bf79-3d7ccda3fbcd" SourceId="1" SourceUrl="http://localhost:60523/WsTheBigFour.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

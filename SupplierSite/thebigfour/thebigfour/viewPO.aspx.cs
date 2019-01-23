@@ -78,19 +78,60 @@ namespace thebigfour
         {
             BllDeliveryOrders d = new BllDeliveryOrders();
             int poNum = Convert.ToInt32(lblPONum.Text);
+            int qty = Convert.ToInt32(lblQty.Text);
             //int prodID = Convert.ToInt32(GridView1.SelectedRow.Cells[0].Text);
             //string prodDesc = GridView1.SelectedRow.Cells[1].Text;
             //int qty = Convert.ToInt32(GridView1.SelectedRow.Cells[2].Text);
-            string status = "Processing";
-            string date = System.DateTime.Now.ToShortDateString();
-            d.DeliveryInsert(poNum,Convert.ToInt32(lblProdID.Text),lblDesc.Text,Convert.ToInt32(lblQty.Text),status,date);
+            //string status = "Processing";
+            DateTime time = DateTime.Now;              // Use current time
+            string format = "yyyy-MM-dd hh:mm tt";
+            string date = time.ToString(format);
+            int result = 0;
+            result = d.DeliveryInsert(50.00M, "Processing", poNum, date, "Standard" , lblDesc.Text, qty, "boxwear", Convert.ToDecimal(lblTotal.Text));
 
-            BllPurchaseOrders po = new BllPurchaseOrders();
-             po.updatePOStatus(poNum);
-            Response.Redirect("pendingpurchaseorders.aspx");
+            if (result == 1)
+            {
 
+                BllPurchaseOrders po = new BllPurchaseOrders();
+                po.updatePOStatus(poNum);
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "redirect",
+                        "alert('Insert successful'); window.location='" +
+                        Request.ApplicationPath + "pendingpurchaseorders.aspx';", true);
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "redirect",
+                        "alert('Insert unsuccessful'); window.location='" +
+                        Request.ApplicationPath + "pendingpurchaseorders.aspx';", true);
+            }
+
+
+
+            ////invoce
+            //int result = 0;
+            //int poNum = Convert.ToInt32(lblPONum.Text);
+            //Bllinvoice a = new Bllinvoice();
+            //string status = "Processing";
+            //DateTime myDateTime = DateTime.Now;
+            //string date = myDateTime.ToString("yyyy-MM-dd HH:mm:ss.fff");
+            //result = a.insertInvoice(date, Convert.ToDecimal(lblTotal.Text), status, poNum);
+
+            //if (result == 1)
+            //{
+
+            //    BllPurchaseOrders po = new BllPurchaseOrders();
+            //    po.updatePOStatus(poNum);
+            //    ScriptManager.RegisterStartupScript(this, this.GetType(), "redirect",
+            //            "alert('Insert successful'); window.location='" +
+            //            Request.ApplicationPath + "pendingpurchaseorders.aspx';", true);
+            //}else
+            //{
+            //    ScriptManager.RegisterStartupScript(this, this.GetType(), "redirect",
+            //            "alert('Insert unsuccessful'); window.location='" +
+            //            Request.ApplicationPath + "pendingpurchaseorders.aspx';", true);
+            //}
         }
-    
+
 
         //protected void btnCO_Click(object sender, EventArgs e)
         //{

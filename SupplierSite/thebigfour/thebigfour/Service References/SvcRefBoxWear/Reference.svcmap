@@ -19,10 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:62478/WsBoxWear.svc?singleWsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:62478/WsBoxWear.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WsBoxWear.wsdl" MetadataType="Wsdl" ID="26122e7b-d129-4875-8b72-ff4499254ebb" SourceId="1" SourceUrl="http://localhost:62478/WsBoxWear.svc?singleWsdl" />
+    <MetadataFile FileName="WsBoxWear.disco" MetadataType="Disco" ID="9353b40d-c041-4ab8-8cb7-71e42c6f110c" SourceId="1" SourceUrl="http://localhost:62478/WsBoxWear.svc?disco" />
+    <MetadataFile FileName="WsBoxWear1.wsdl" MetadataType="Wsdl" ID="f91c4bd3-5a80-4421-9067-c61e9541fbc5" SourceId="1" SourceUrl="http://localhost:62478/WsBoxWear.svc?wsdl" />
+    <MetadataFile FileName="WsBoxWear.xsd" MetadataType="Schema" ID="8eb48cf4-5561-4681-97ba-6142407ad312" SourceId="1" SourceUrl="http://localhost:62478/WsBoxWear.svc?xsd=xsd2" />
+    <MetadataFile FileName="WsBoxWear1.xsd" MetadataType="Schema" ID="5778d5d3-ffff-4226-bdb7-20eb53196ffb" SourceId="1" SourceUrl="http://localhost:62478/WsBoxWear.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsBoxWear2.xsd" MetadataType="Schema" ID="f076800f-bad1-4e45-ad79-a1f7f5683eae" SourceId="1" SourceUrl="http://localhost:62478/WsBoxWear.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

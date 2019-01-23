@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4e44e94e-433a-457b-9567-b26067a6c61b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:65481/WsJudoVan.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WsJudoVan.disco" MetadataType="Disco" ID="d510357c-7a37-477b-8334-bde8b5744c3a" SourceId="1" SourceUrl="http://localhost:65481/WsJudoVan.svc?disco" />
+    <MetadataFile FileName="WsJudoVan.xsd" MetadataType="Schema" ID="6701bb32-10b2-4aff-ab3a-79f1691cf9b6" SourceId="1" SourceUrl="http://localhost:65481/WsJudoVan.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsJudoVan1.xsd" MetadataType="Schema" ID="de6b9ec2-d1c4-4a4e-952c-8b6a9d78aaa3" SourceId="1" SourceUrl="http://localhost:65481/WsJudoVan.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsJudoVan.wsdl" MetadataType="Wsdl" ID="d71a4d98-3a1f-4e3a-85a4-257ea92a17f2" SourceId="1" SourceUrl="http://localhost:65481/WsJudoVan.svc?wsdl" />
+    <MetadataFile FileName="WsJudoVan2.xsd" MetadataType="Schema" ID="6e57af31-28a1-4ddf-bb9b-4a29b7e0cc38" SourceId="1" SourceUrl="http://localhost:65481/WsJudoVan.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

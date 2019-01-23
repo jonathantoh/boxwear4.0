@@ -102,6 +102,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminLogin.aspx" />
     <Content Include="assets\css\demo.css" />
     <Content Include="assets\css\Footer-white.css" />
     <Content Include="assets\css\Footer-with-button-logo.css" />
@@ -144,7 +145,11 @@
     <Content Include="CSS\swiper.css" />
     <Content Include="CSS\swiper.min.css" />
     <Content Include="CSS\theme.css" />
+    <Content Include="dashboard.aspx" />
+    <Content Include="deliveryOrderDetails.aspx" />
+    <Content Include="deliveryOrders.aspx" />
     <Content Include="image.aspx" />
+    <Content Include="invoiceReview.aspx" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\swiper.esm.bundle.js" />
     <Content Include="js\swiper.esm.js" />
@@ -155,6 +160,7 @@
     <Content Include="obj\Debug\boxwear.dll" />
     <Content Include="obj\Debug\boxwear.pdb" />
     <Content Include="obj\Debug\TempPE\Service References.SvcRefTheBigFour.Reference.cs.dll" />
+    <Content Include="payment.aspx" />
     <Content Include="ProductCatalogue.aspx" />
     <Content Include="purchaseorderdetails.aspx" />
     <Content Include="purchaseorderlist.aspx" />
@@ -199,6 +205,8 @@
     <Content Include="purchaseorderlist2.aspx" />
     <Content Include="purchaseorderlist3.aspx" />
     <Content Include="purchaseorderlistfinal.aspx" />
+    <None Include="Service References\SvcRefTheBigFour\WsTheBigFour.wsdl" />
+    <None Include="Service References\SvcRefTheBigFour\WsTheBigFour1.disco" />
     <Content Include="style\style.css" />
     <Content Include="supplier-images\big4logo.jpg" />
     <Content Include="supplier-images\cap.jpg" />
@@ -208,6 +216,7 @@
     <Content Include="supplier-images\pants1.jpg" />
     <Content Include="supplier-images\supreme1.jpg" />
     <Content Include="test.aspx" />
+    <Content Include="users.aspx" />
     <Content Include="WsBoxWear.svc" />
     <Content Include="js\swiper.min.js.map" />
     <Content Include="obj\Debug\boxwear.csprojResolveAssemblyReference.cache" />
@@ -218,7 +227,15 @@
     <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
     <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
-    <None Include="Service References\SvcRefTheBigFour\WsTheBigFour.wsdl" />
+    <None Include="Service References\SvcRefTheBigFour\WsTheBigFour3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRefTheBigFour\WsTheBigFour31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRefTheBigFour\WsTheBigFour32.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -242,12 +259,46 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminLogin.aspx.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminLogin.aspx.designer.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\BllDelivery.cs" />
+    <Compile Include="BLL\Bllinvoice.cs" />
     <Compile Include="BLL\BllProducts.cs" />
     <Compile Include="BLL\BllPurchaseOrders.cs" />
+    <Compile Include="CreditCard.cs" />
+    <Compile Include="CreditCardUtility.cs" />
     <Compile Include="DAL\DalDbConn.cs" />
+    <Compile Include="DAL\DalDelivery.cs" />
+    <Compile Include="DAL\Dalinvoice.cs" />
     <Compile Include="DAL\DalProducts.cs" />
     <Compile Include="DAL\DalPurchaseOrder.cs" />
     <Compile Include="DAL\DalPurchaseOrders.cs" />
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deliveryOrderDetails.aspx.cs">
+      <DependentUpon>deliveryOrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deliveryOrderDetails.aspx.designer.cs">
+      <DependentUpon>deliveryOrderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deliveryOrders.aspx.cs">
+      <DependentUpon>deliveryOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deliveryOrders.aspx.designer.cs">
+      <DependentUpon>deliveryOrders.aspx</DependentUpon>
+    </Compile>
     <Compile Include="image.aspx.cs">
       <DependentUpon>image.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -255,9 +306,23 @@
     <Compile Include="image.aspx.designer.cs">
       <DependentUpon>image.aspx</DependentUpon>
     </Compile>
+    <Compile Include="invoiceReview.aspx.cs">
+      <DependentUpon>invoiceReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="invoiceReview.aspx.designer.cs">
+      <DependentUpon>invoiceReview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProductCatalogue.aspx.cs">
       <DependentUpon>ProductCatalogue.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -320,6 +385,13 @@
     </Compile>
     <Compile Include="test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
     </Compile>
     <Compile Include="WsBoxWear.svc.cs">
       <DependentUpon>WsBoxWear.svc</DependentUpon>

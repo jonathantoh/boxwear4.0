@@ -57,3 +57,28 @@ C:\Users\Joan Ng\Desktop\EADP\version 3\boxwear4.0\CompanySite\boxwear\boxwear\b
 C:\Users\Joan Ng\Desktop\EADP\version 3\boxwear4.0\CompanySite\boxwear\boxwear\obj\Debug\boxwear.csprojResolveAssemblyReference.cache
 C:\Users\Joan Ng\Desktop\EADP\version 3\boxwear4.0\CompanySite\boxwear\boxwear\obj\Debug\boxwear.dll
 C:\Users\Joan Ng\Desktop\EADP\version 3\boxwear4.0\CompanySite\boxwear\boxwear\obj\Debug\boxwear.pdb
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\ApplicationInsights.config
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\csc.exe
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\vbc.exe
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\VBCSCompiler.exe
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\boxwear.dll.config
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\boxwear.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\boxwear.pdb
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\Microsoft.AI.Web.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\obj\Debug\boxwear.csprojResolveAssemblyReference.cache
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\obj\Debug\boxwear.dll
+C:\Users\Jonathantoh\Documents\GitHub\boxwear4.0\CompanySite\boxwear\boxwear\obj\Debug\boxwear.pdb
